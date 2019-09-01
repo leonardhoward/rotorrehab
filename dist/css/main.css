@@ -1,0 +1,479 @@
+span.red-heading {
+  color: #bd1717;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-style: italic;
+  z-index: 6; }
+
+span.red {
+  color: #bd1717;
+  font-style: italic;
+  z-index: 6; }
+
+body {
+  background: #fcfcfc;
+  margin: 0; }
+
+.container {
+  width: 100%;
+  background-color: #000;
+  margin: 0;
+  position: absolute; }
+  .container .heading {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    font-family: unset;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.932);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 6; }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: white;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1) !important;
+  z-index: 10; }
+
+.logo {
+  height: 80px; }
+
+.logo img {
+  height: 80px;
+  align-items: left;
+  max-width: 90%; }
+
+.logo-name {
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 0%; }
+
+.indent {
+  text-indent: 25%; }
+
+/* background: url(../img/gp_logo_nav.jpg) static;*/
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%; }
+
+.nav-links li {
+  list-style: none; }
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #383434;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.nav-links a:hover {
+  color: #bd1717;
+  transition: .25s; }
+
+.burger {
+  display: none;
+  cursor: pointer; }
+
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease; }
+
+.main {
+  text-align: center;
+  margin-top: 800px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 22px; }
+
+.main-img {
+  max-width: 50%; }
+
+.service-body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 10% 0 10%; }
+
+.service-bottom {
+  margin: 200px 0 200px 0; }
+
+.service-img {
+  width: 15rem; }
+
+.container-grid {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.container-grid img {
+  width: 400px;
+  height: 300px;
+  opacity: 0.9; }
+
+.row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 150px 0 150px 0;
+  margin: 0 40px 0 40px;
+  border-bottom: 4px solid rgba(228, 219, 219, 0.548);
+  font-size: 18px;
+  opacity: 1; }
+
+.container-form {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px; }
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400; }
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%; }
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px; }
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa; }
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none; }
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #757272;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 20px;
+  font-size: 15px; }
+
+#contact button[type="submit"]:hover {
+  background: #bd1717;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out; }
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.copyright {
+  text-align: center; }
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa; }
+
+::-webkit-input-placeholder {
+  color: #888; }
+
+:-moz-placeholder {
+  color: #888; }
+
+::-moz-placeholder {
+  color: #888; }
+
+:-ms-input-placeholder {
+  color: #888; }
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%; }
+  .row {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center; }
+    .row .col-description {
+      order: 1; } }
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    z-index: 8;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 72px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translate(100%);
+    transition: 0.5s ease-in; }
+  .nav-links li {
+    opacity: 0; }
+  .nav-links a {
+    color: black; }
+  .burger {
+    display: block; }
+  .heading {
+    font-size: 2rem; }
+  .row {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center; }
+    .row .col-description {
+      order: 1; } }
+
+/**
+ * Carousel.sass
+ * @author: Dang Van Thanh
+ * @github: https://github.com/dangvanthanh/carousel.sass
+ * @description: A Simple Carousel Pure CSS Using Sass
+ * @version: 1.0.0
+ */
+.toggle {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+  .toggle .line1 {
+    transform: rotate(-60deg) translate(-7px, 6px); }
+  .toggle .line2 {
+    transform: rotate(60deg) translate(6px, -12px); }
+  .toggle .line3 {
+    transform: translateX(8px); }
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg); }
+  to {
+    -ms-transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(5), .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(1) {
+  opacity: 1 !important;
+  z-index: 3; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+body {
+  background: #fcfcfc;
+  margin: 0; }
+
+.container {
+  width: 100%;
+  min-width: 400px;
+  margin: 50px auto; }
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .carousel > input[type="radio"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0; }
+    .carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item,
+    .carousel > input[type="radio"]:checked ~ .carousel__prev > label,
+    .carousel > input[type="radio"]:checked ~ .carousel__next > label {
+      opacity: 0; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) {
+      opacity: 1; }
+    .carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
+      opacity: 1; }
+    .carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) {
+      opacity: 1; }
+    .carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4) {
+      opacity: 1; }
+    .carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(5) {
+      opacity: 1; }
+    .carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
+      background: #ccc;
+      cursor: default;
+      pointer-events: none; }
+  .carousel__items {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    height: 600px;
+    position: relative; }
+  .carousel__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s; }
+    .carousel__item img {
+      width: 100%;
+      vertical-align: middle;
+      opacity: .6; }
+  .carousel__prev > label, .carousel__next > label {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    opacity: 0;
+    z-index: 2; }
+    .carousel__prev > label:hover, .carousel__prev > label:focus, .carousel__next > label:hover, .carousel__next > label:focus {
+      opacity: .5 !important; }
+    .carousel__prev > label:before, .carousel__prev > label:after, .carousel__next > label:before, .carousel__next > label:after {
+      content: "";
+      position: absolute;
+      width: inherit;
+      height: inherit; }
+    .carousel__prev > label:before, .carousel__next > label:before {
+      background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+      width: 60%;
+      height: 60%;
+      top: 20%; }
+  .carousel__prev > label {
+    left: 2%; }
+    .carousel__prev > label:before {
+      left: 35%;
+      top: 20%;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg); }
+  .carousel__next > label {
+    right: 2%; }
+    .carousel__next > label:before {
+      left: 10%;
+      transform: rotate(315deg);
+      -webkit-transform: rotate(315deg); }
+  .carousel__nav {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 3; }
+    .carousel__nav > label {
+      border: 1px solid #fff;
+      display: inline-block;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 .125%;
+      width: 20px;
+      height: 20px; }
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.nav-active {
+  transform: translateX(0%); }
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  margin-bottom: 20%; }

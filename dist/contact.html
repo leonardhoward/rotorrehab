@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css"/>
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav class="menu">
+           
+        <div class="logo">
+           <img src="../dist/pictures/rotor_rehab3.jpg" alt="logo">
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+            <li class="nav-item current">
+                <a href="contact.html">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+ </nav>
+ <section class="service-body">
+        <div data-aos="fade">
+    <h1>Contact Us</h1>
+    <p>Every car needs a helping hand.</p>
+    <img class="service-img" src="../dist/pictures/blood_psi.jpg">  
+</div>
+    <p>Drop us an email below, or give us a call at (505)507-7026</p>
+    </section>
+
+    <section class="form">
+            <div class="container-form">  
+                    <form id="contact" action="contact.php" method="post">
+                     
+                      <fieldset>
+                        <input placeholder="Your name" type="text" name="name" tabindex="1" required autofocus>
+                      </fieldset>
+                      <fieldset>
+                        <input placeholder="Your Email Address" type="email" name="email" tabindex="2" required>
+                      </fieldset>
+                      <fieldset>
+                        <input placeholder="Your Phone Number (optional)" type="tel" name="phone" tabindex="3" required>
+                      </fieldset>
+                      <fieldset>
+                        <input placeholder="Year, make, and model of your vehicle (optional)" name="vehicle" tabindex="4" required>
+                      </fieldset>
+                      <fieldset>
+                        <textarea placeholder="Type your message here...." name="message" tabindex="5" required></textarea>
+                      </fieldset>
+                      <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                      </fieldset>
+                    </form>
+                  </div>
+        </section>
+
+        <section class="location service-body">
+            <H2>Where we are</H2>
+            <p>We are located in Albuquerque, New Mexico. Come see us!</p>
+            <div id="map"></div>
+        </section>
+</body>
+<script src="../dist/js/main.js"></script>
+<script src="../node_modules/aos/dist/aos.js"></script>
+<script>AOS.init();</script>  
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4pCsVL3odwHpJYf_H6BSLm_7ONHZuv-Y&callback=initMap">
+</script>
+</html>

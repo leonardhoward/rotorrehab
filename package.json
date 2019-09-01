@@ -1,0 +1,23 @@
+{
+  "name": "rotor_rehab1",
+  "version": "1.0.0",
+  "description": "rotor-rehab website",
+  "main": "index.js",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "rotor",
+    "rehab"
+  ],
+  "author": "Leonard Howard",
+  "license": "MIT",
+  "homepage": "https://leonardhoward.github.io/rotorrehab"
+}
