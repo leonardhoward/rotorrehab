@@ -1,6 +1,9 @@
 span.red-heading {
   color: #bd1717;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000,
+ 1px -1px 0 #000,
+ -1px 1px 0 #000,
+ 1px 1px 0 #000;
   font-style: italic;
   z-index: 6; }
 
@@ -293,13 +296,20 @@ fieldset {
   animation-name: spin;
   animation-duration: 4000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; }
+  animation-timing-function: linear;
+  }
   .toggle .line1 {
-    transform: rotate(-60deg) translate(-7px, 6px); }
+    transform: rotate(-60deg) translate(-7px, 6px);
+    background-color: #bd1717;
+   }
   .toggle .line2 {
-    transform: rotate(60deg) translate(6px, -12px); }
+    transform: rotate(60deg) translate(6px, -12px);
+    background-color: #bd1717;
+    }
   .toggle .line3 {
-    transform: translateX(8px); }
+    transform: translateX(8px);
+    background-color: #bd1717;
+    }
 
 @-ms-keyframes spin {
   from {
