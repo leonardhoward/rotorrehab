@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather&family=Montserrat&family=Poppins:ital,wght@1,500&family=Roboto:wght@100;900&display=swap');
+        </style>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css"/>
     <title>Services</title>
@@ -12,7 +15,7 @@
 
     <nav class="menu">           
         <div class="logo">
-           <img src="../dist/pictures/rotor_rehab3.jpg" alt="logo">
+            <a href="index.html"><img src="pictures/rehabrotor8.png" alt="logo"></a>
         </div>
 
         <ul class="nav-links">
@@ -54,27 +57,51 @@
     </section>
 
     <div class="container-grid">
+
+        <div id="maintenance" 
+         data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0" 
+        class="row gray">      
+            <div class="col-description">
+                    <h3>Maintenance and repairs</h3>
+                    <p>From oil services, to brake jobs, to advanced diagostics, you can rest knowing that your vehicle is in good hands. Rotor <span class= "red">RE</span>-hab's technicians have over 12 years of experience with rotary powered vehicles.</p>
+                </div>              
+                <div class="col"><img class="grid-img" src="../dist/pictures/brembo.jpg"></div> 
+            </div>
            
-    <div data-aos="fade-up" class="row"> 
+    <div id="engine" 
+    data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-offset="0" 
+     class="row"> 
             <div class="col"><img class="grid-img" src="../dist/pictures/rotor_stack.jpg"></div>              
             <div class="col-description">
                 <h3>Engine building</h3>
-                <p>Whether you need your engine refreshed for your unmodified classic, or you need an engine taylored specifically for your racing style, Rotor <span class= "red">RE</span>-hab has you covered. We have been building reliable and powerful rotary engines for years! </p>
+                <p>Whether you need your engine refreshed for your unmodified classic, or you need an engine tailored specifically for your racing style, Rotor <span class= "red">RE</span>-hab has you covered. We have been building reliable and powerful rotary engines for years! </p>
             </div>
         </div>
 
-        <div data-aos="fade-up" class="row"> 
+        <div 
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0" 
+        class="row gray"> 
                              
-                <div class="col-description">
-                    <h3>Engine porting</h3>
-                    <p>Rotor <span class="red">RE</span>-hab specializes in rotary engine porting. We have made proven and reliable power with our ports and can do everything from a mild streetport all the way up to peripheral ports.</p>
-                </div>
-                <div class="col"><img class="grid-img" src="../dist/pictures/exhaust_port.jpg"></div> 
+            <div class="col-description">
+                <h3>Engine porting</h3>
+                <p>Rotor <span class="red">RE</span>-hab is capable in performing all types of rotary engine porting. We have made proven and reliable power with our ports!</p>
             </div>
-    
+            <div class="col"><img class="grid-img" src="../dist/pictures/porting.jpg"></div> 
+        </div>
 
-        <div data-aos="fade-up" class="row">
-                <div class="col"><img class="grid-img" src="../dist/pictures/turbo_engine.jpg"></div>
+
+        <div id="performance"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0" 
+        class="row">
+                <div class="col"><img class="grid-img" src="../dist/pictures/12a2.jpg"></div>
                 <div class="col-description">
                   <h3>Performance parts installs</h3>
                   <p>From single turbo conversions, suspension fine-tuning, aero upgrades, and just about anything that makes a car perform better, Rotor <span class= "red">RE</span>-hab has you covered. We have been making cars fast for a long time and know what works and what doesn't! </p>
@@ -82,26 +109,31 @@
                
                 </div>     
 
-        <div data-aos="fade-up" class="row">      
-        <div class="col-description">
-                <h3>Maintenance and repairs</h3>
-                <p>From oil services, to brake jobs, to advanced diagostics, you can rest knowing that your vehicle is in good hands. Rotor <span class= "red">RE</span>-hab's technicians are ASE certified and have over 12 years of professional experience.</p>
-            </div>              
-            <div class="col"><img class="grid-img" src="../dist/pictures/brake_job.jpg"></div> 
-        </div>
+        
 
-        <div data-aos="fade-up" class="row">
-            <div class="col"><img class="grid-img" src="../dist/pictures/spark_plugs.jpg"></div>              
+        <div id="tuning" 
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0" 
+        class="row gray">
+
             <div class="col-description">
                 <h3>ECU tuning</h3>
                 <p>The secret to a reliable and powerful rotary engine is in the tune. Rotor <span class= "red">RE</span>-hab has the know-how to make your engine operate at its full potential.</p>
             </div>
+            <div class="col"><img class="grid-img" src="../dist/pictures/fc-hako-03.jpg"></div>              
+           
         </div>
     </div>
     <section class= "service-body service-bottom"><a href="contact.html"><span class="red">
     Contact us</span></a> to see what we can do for you.</section>
+
+    <section id="footer">
+        <i class="fas fa-copyright"></i> Rotor REhab 2020 ALL RIGHTS RESERVED
+      </section>
 </body>
 <script src="../dist/js/main.js"></script>
+<script src="https://kit.fontawesome.com/ce362280dc.js" crossorigin="anonymous"></script>
 <script src="../node_modules/aos/dist/aos.js"></script>
 <script>AOS.init();</script>  
 

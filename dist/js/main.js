@@ -1,20 +1,5 @@
-/*
-function scrollAppear(){
-    var row= document.querySelector('.row');
-    var rowPosition= row.getBoundingClientRect().top;
-    var rowAppear= window.innerHeight;
-     
-        if(rowPosition < rowAppear){
-            row.classList.add('row-appear');
-        }  
-}
 
-window.addEventListener('scroll',scrollAppear);
-
-*/
-
-
-
+const rotate = document.querySelectorAll('.rotate');
 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -40,18 +25,29 @@ const navSlide = () => {
 
 navSlide();
 
+// for plus sign animation
 
-function initMap(){
-    var options = {
-        zoom: 10,
-        center: {lat: 35.105, lng: -106.541}
+for (let i = 0; i <= rotate.length; i++) {
+    rotate[i].addEventListener('animationend', function(e) {    
+        rotate[i].classList.remove('animated');
+    });
+
+
+   rotate[i].addEventListener('mouseover', function(e) {
+     rotate[i].classList.add('animated')
+   })
+  }
+
+
+  //for map
+  
+  // function initMap(){
+//     var options = {
+//         zoom: 10,
+//         center: {lat: 35.068547, lng: -106.538099}
         
-    }
-    var map = new google.maps.Map(document.getElementById('map'), options);
-}
+//     }
+//     var map = new google.maps.Map(document.getElementById('map'), options);
+// }
 
-
-  //  var zone = {lat: 35.105, lng: -106.541};
-  
-  
 

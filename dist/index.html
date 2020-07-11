@@ -5,108 +5,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merriweather&family=Montserrat&family=Poppins:ital,wght@1,500&family=Roboto:wght@100;900&display=swap');
+      </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+       
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css"/>
+   
     <title>Rotor Re-hab</title>
 </head>
 <body>
    
-        <nav class="menu">
-           
-                <div class="logo">
-                   <img src="../dist/pictures/rotor_rehab3.jpg" alt="logo">
-                </div>
-                <ul class="nav-links">
-                    <li class="nav-item current">
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html">
-                            About Us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="services.html">
-                            Services
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html">
-                            Contact Us
-                        </a>
-                    </li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>  
-            </nav>
-    <section class="showcase">
-                      
-        <div class="container">   
-            <div class="heading">
-                        ROTOR <span class="red-heading">RE</span>-HAB
-                 </div>      
-            <div class="carousel">        
-                <input type="radio" id="carousel-1" name="carousel[]" checked>
-                <input type="radio" id="carousel-2" name="carousel[]">
-             <input type="radio" id="carousel-3" name="carousel[]">
-                <input type="radio" id="carousel-4" name="carousel[]">
-                <input type="radio" id="carousel-5" name="carousel[]">
-                <ul class="carousel__items">
-                    <li class="carousel__item"><img src=../dist/pictures/repu.jpg alt="repu"></li>
-                    <li class="carousel__item"><img src=../dist/pictures/rotor_background.jpg alt="rotor"></li>
-                    <li class="carousel__item"><img src=../dist/pictures/sevenstock.jpg alt="sevenstock"></li>
-                    <li class="carousel__item"><img src=../dist/pictures/rotary_engine.jpg alt="angry bee"></li>
-                    <li class="carousel__item"><img src=../dist/pictures/deflennard.jpg alt="fd3s"></li> 
-                </ul>
+    <nav class="menu">
+            <div class="logo">
+               <a href="index.html"><img src="pictures/rehabrotor8.png" alt="logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item current">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>  
+        </nav>
 
-             <div class="carousel__prev">
-                <label for="carousel-1"></label>
-                <label for="carousel-2"></label>
-                <label for="carousel-3"></label>
-                <label for="carousel-4"></label>
-                <label for="carousel-5"></label>
-             </div>
+<section class="imgCarousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div
+        class="heading">
+          Welcome to 
+          <div class="underscore"></div>
+          <p
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+          data-aos-duration="300"
+          class="headingTwo">ROTOR</p>
+          <p
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+          data-aos-duration="800"
+          >
+          <!-- Rotor <span class="red-heading">RE</span>/HAB -->
+          <img src="pictures/rehabrotor12.png" alt="logo">
+        </p>
+   </div> 
 
-             <div class="carousel__next">
-               <label for="carousel-1"></label>
-               <label for="carousel-2"></label>
-               <label for="carousel-3"></label>
-               <label for="carousel-4"></label>
-               <label for="carousel-5"></label> 
-             </div>
-
-             <div class="carousel__nav">
-               <label for="carousel-1"></label>
-               <label for="carousel-2"></label>
-               <label for="carousel-3"></label>
-               <label for="carousel-4"></label>
-               <label for="carousel-5"></label>
-               </div>
-           </div>
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url(pictures/13brew.jpg)">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h2 class="display-4">First Slide</h2>
+            <p class="lead">This is a description for the first slide.</p> -->
+          </div>
         </div>
-    </section>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url(pictures/repus.jpg)">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h2 class="display-4">Second Slide</h2>
+            <p class="lead">This is a description for the second slide.</p> -->
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url(pictures/rx2engine.jpg)">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h2 class="display-4">Third Slide</h2>
+            <p class="lead">This is a description for the third slide.</p> -->
+          </div>
+        </div>
+          <!-- Slide Four - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url(pictures/redfd.jpg)">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h2 class="display-4">Third Slide</h2>
+              <p class="lead">This is a description for the third slide.</p> -->
+            </div>
+          </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+ 
+  </section>
 
-    <section class="main">            
+  <section class="mission">
+  <!-- <div class="container"> -->
+    <div class="row">
+      <div class="col-md description"  data-aos="fade-right" data-aos-duration="800">
         <h2 class="slogan">   
-            <span class="red">RE</span>-viving the rotary engine
-           </h2>
+          <span class="red">RE</span>-viving the rotary engine
+         </h2>
+  
+         <p>Rotor <span class="red">RE</span>-hab is your one-stop shop for rotary engine building, performance parts installs, and ECU tuning. We have helped many struggling rotaries get back to the fire-breathing selves they once were!</p>    
+      </div>
 
-           <p>Rotor <span class="red">RE</span>-hab is your one-stop shop for rotary engine building, performance parts installs, and ECU tuning. We have helped many struggling rotaries get back to the fire-breathing selves they once were!</p>
-        
-           <img class="main-img" src="../dist/pictures/rotor_rehab8.jpg">
-    </section>
+      <div class="col-md"  data-aos="fade-left" data-aos-duration="900" data-aos-easing="ease-in-sine">
+        <img class="main-img" src="pictures/rotor_rehab11.jpg">
+      </div>
+      <!-- </div> -->
+    </div>
+  </section>
 
+  <section class="work">
+    
+      <div class="workColumn" data-aos="fade-up" data-aos-duration="800" data-aos-offset="100">
+       <i class="fas fa-oil-can workIcon"></i>
+       <br><h4>Maintenance and Repairs</h4>
+       <p>From oil changes to electical system repairs, we can get your rotary-powered vehicle back on track.</p>
+       <a href="/dist/services.html#maintenance"><i class="fas fa-plus-circle rotate"></i></a>
+       <p>Read more</p>
+      </div>
+ 
+        <div class="workColumn" data-aos="fade-up" data-aos-duration="800" data-aos-offset="150">
+ <i class="fas fa-wrench workIcon"></i>
+    <br><h4>Engine Builds</h4>
+    <p>From basic <span class= "red">RE</span>-builds to race engines, we can put together an engine you can be confident in.</p>
+    <a href="/dist/services.html#engine"><i class="fas fa-plus-circle rotate"></i></a>
+    <p>Read more</p>
+    </div>
 
+      <div class="workColumn" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">
+        <i class="fab fa-superpowers workIcon"></i>
+        <br><h4>Performance Upgrades</h4>
+        <p>We can do more than just get your rotary engine back in shape.</p>
+        <a href="/dist/services.html#performance"><i class="fas fa-plus-circle rotate"></i></a>
+        <p>Read more</p>
+      </div>
+
+  <div class="workColumn" data-aos="fade-up" data-aos-duration="800" data-aos-offset="250">
+  <i class="fas fa-laptop-medical workIcon"></i>
+  <br><h4>ECU tuning</h4>
+  <p>The key to never having another rotor  <span class= "red">RE</span>-lapse is making sure your ECU is calibrated correctly.</p>
+  <a href="/dist/services.html#tuning"><i class="fas fa-plus-circle rotate"></i></a>
+  <p>Read more</p>
+</div>
+
+</section>
+
+<section id="footer">
+  <i class="fas fa-copyright"></i> Rotor REhab 2020 ALL RIGHTS RESERVED
+</section>
 </body>
+  
 
-<script src="../dist/js/main.js"></script>
-<script src="../node_modules/aos/dist/aos.js"></script>
-<script>AOS.init();</script> 
+<script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/ce362280dc.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="anime.min.js"></script>
+    <script>AOS.init();</script>  
+  </body>
+ 
 
 
 </html>
