@@ -131,7 +131,7 @@ nav {
  }
 
  .mission{
-height: 95vh;
+height: 600px;
 font-family: 'Montserrat', sans-serif;
  } 
 
@@ -140,18 +140,11 @@ font-family: 'Montserrat', sans-serif;
    font-family: 'Montserrat', sans-serif;
  }
 
- /* .main-img {
+ .main-img {
   width: 50%; 
   
-} */
+}
 
-/* .main {
-  text-align: center;
-  margin-top: 100px;
-  margin-left: 20%;
-  margin-right: 20%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 22px; } */
   .col-md {
     text-align: center;
   }
@@ -164,6 +157,13 @@ font-family: 'Montserrat', sans-serif;
 
   .work {
    background-color: rgb(230, 227, 227);
+   display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  font-size: 1.5rem;
+ 
+   /* display: grid;
+   grid-template-columns: auto auto auto auto;
    font-family: 'Montserrat', sans-serif;
     -webkit-columns: 4 200px;
      -moz-columns: 4 200px;
@@ -173,7 +173,7 @@ font-family: 'Montserrat', sans-serif;
           column-gap: 4em;
           -webkit-column-rule: 1px solid #383434;
      -moz-column-rule: 1px solid #383434;
-          column-rule: 1px solid #383434;
+          column-rule: 1px solid #383434; */
           
   }
 
@@ -415,9 +415,12 @@ fieldset {
       margin-top: 0px;
     }
    
-    /* .main-img {
-     height: 25%; 
-   } */
+    .mission {
+     /* margin-bottom: 400px;  */
+   }
+   .main-img {
+     width: 25%;
+   }
 
         .work {
         -webkit-columns: 2 200px;
@@ -443,14 +446,15 @@ fieldset {
     right: 0px;
     height: 100vh;
     top: 72px;
-    display: flex;
+    overflow: hidden;
+    display: none;
     background-color: rgb(199, 196, 196);
     opacity: 0.9;
     flex-direction: column;
     align-items: center;
     width: 50%;
     transform: translate(100%);
-    transition: 0.5s ease-in; 
+    transition: 0.4s ease-in; 
   }
   .nav-links li {
     opacity: 0; 
@@ -479,17 +483,14 @@ fieldset {
       order: 1;
      }
 
-     .mission{
-      height: 110vh;
-       } 
-      
+     .mission {
+      margin-bottom: 0; 
+    }
        .description {
          margin-top: 0px;
        }
       
-       .main-img {
-        height: 50%; 
-      }
+     
 
       .service-body .row{
         padding: 0;
@@ -562,13 +563,20 @@ fieldset {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px); }
+    transform: translateX(50px); 
+   
+  }
   to {
     opacity: 1;
-    transform: translateX(0px); } }
+    transform: translateX(0px); 
+   
+  } 
+}
 
 .nav-active {
-  transform: translateX(0%); }
+  transform: translateX(0%);
+  display:flex;
+ }
 
 #map {
   height: 400px;
