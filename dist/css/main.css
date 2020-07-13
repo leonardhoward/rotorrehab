@@ -68,7 +68,7 @@ body {
   .underscore {
     border-bottom: 3px solid;
     width: 100px;
-    margin-left: 2.5em;
+    margin-left: 2.3em;
   }
   
   
@@ -411,13 +411,17 @@ fieldset {
       z-index: 6; 
      
     }
+
+    .underscore {
+      border-bottom: 3px solid;
+      width: 3em;
+      margin-left: 2.3em;
+    }
      .description {
       margin-top: 0px;
     }
    
-    .mission {
-     /* margin-bottom: 400px;  */
-   }
+    
    .main-img {
      width: 25%;
    }
@@ -472,6 +476,13 @@ fieldset {
       width: 200px;
       margin-left: 20px;
     }
+
+    .underscore {
+      border-bottom: 3px solid;
+      width: 3em;
+      margin-left: 2em;
+    }
+
   .row {
     display: flex;
     /* background-color: white; */
